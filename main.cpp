@@ -28,7 +28,7 @@ int width, height;
 float aspect;
 glm::mat4 pMat, vMat, mMat, mvMat;
 
-ImportedModel myModel("shuttle.obj");
+ImportedModel myModel("lego obj.obj");
 
 float toRadians(float degrees) { return (degrees * 2.0f * 3.14159f) / 360.0f; }
 
@@ -68,7 +68,7 @@ void setupVertices(void) {
 
 void init(GLFWwindow* window) {
 	renderingProgram = Utils::createShaderProgram("vertShader.glsl", "fragShader.glsl");
-	cameraX = 0.0f; cameraY = 0.0f; cameraZ = 1.5f;
+	cameraX = 0.0f; cameraY = 0.0f; cameraZ = 130.5f;
 	objLocX = 0.0f; objLocY = 0.0f; objLocZ = 0.0f;
 
 	glfwGetFramebufferSize(window, &width, &height);
